@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Kid on the Block</title>
+
+    <link rel="stylesheet" type = "text/css" href="style.css">
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+</head>
+<body>
+
+<div>
+    <h1 id = "header">New Kid on the Block</h1>
+</div>
+
+<div>
+    <h1><span id="inputCity"></span></h1>
+
+    <div id="imageButtons">
+        <!-- The below images will serve as buttons for the user to select which recommendations they want to see-->
+        <img src = "images/house.jpeg" alt = "Find Real Estate" id="SearchRealEstate">
+        <img src = "images/meetup.png" alt = "Find Friends" id="meetup">
+        <img src = "images/restaurant.jpeg" alt = "Find Restaurants" id="Restaurants">
+    </div>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+    <div id ="insertRecommendationsHere">
+        <!-- This div will be populated using jQuery based on the imagebutton they select above. For example, if the user selects real estate,
+        then this div will populate with real estate recommendations. If they select find friends after real estate, the real estate options will be
+        replaced by meetup options-->
+
+    </div>
+
+    <div id ="insertFlickrImagesHere">
+        <!-- The bottom of the page will be populated with a scroll of images of the city. These will be populated by the flickr API.-->
+    </div>
+
+</div>
+
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="logic.js"></script>
+
+<script>
+
+
+</script>
+</body>
+</html>

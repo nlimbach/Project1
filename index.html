@@ -12,34 +12,34 @@
 </head>
 <body>
 
-        <div>
-            <h1 id = "header">New Kid on the Block</h1>
-        </div>
-
-        <div>
-            <h3 id = "intro">Hello! We know that moving to a new city can be stressful, so we are here to help. We have gathered resources to make you excited about your new home.
-            Your first step is to tell us what city you are moving! If you'd like, you can also enter the month you are moving.
-            </h3>
-
-            <form role="form">
-                <div class="form-group">
-                    <label for="city-input">Enter City:</label>
-                    <input class="form-control" id="city-input" type="text">
-                    <input class="form-control" id="month-input" type="month">
-                    <button class="btn btn-default" id="search-city" type="submit">Let's go!</button>
-                </div>
-            </form>
-        </div>
+    <form>
+            <div class="form-group">
+                <label for="city-input">Enter City </label>
+                <input class="form-control" id="city-input" type="text" required>
+            </div>
+            <div class="form-group">
+                <label for="month-input">Enter Month (Optional)</label>
+                <input class="form-control" id="month-input" type="month">
+            </div>
+            <input class="btn btn-default" id="letsGo" type="submit">Let's Go!</input>
+    </form>
 
 
 
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
 <script>
 
+console.log("hey");
 
+$("#letsGo").on("click", function(event) {
+    event.preventDefault();
+
+    var city = $("#city-input").val().trim();
+    var month = $("#month-input").val().trim();
+    console.log(city);
+   console.log(month);
+})
 </script>
 </body>
 </html>
