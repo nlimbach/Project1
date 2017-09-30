@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
     });
 });
 
-//EP - Flickr API
+//EP - Flickr APIJ
 var settings = {
     "async": true,
     "crossDomain": true,
